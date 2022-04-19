@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Design</title>
+</head>
+<style>
+    .container{width: 300px;
+    height: 300px;
+    border-radius: 50%;
+margin: 100px auto;
+background-color: whitesmoke;
+perspective: 20000px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 10px 2px #00a8ff, -5px -5px 10px 2px #00a8ff;
+}
+
+.ring1{width: 200px;
+height: 120px;
+background-color: transparent;
+border-radius: 50%;
+border: 8px solid #00a8ff;
+position: absolute;
+transform: rotateX(50deg) rotateY(-50deg);
+}
+
+.ring2{width: 200px;
+height: 120px;
+background-color: transparent;
+border-radius: 50%;
+border: 8px solid #00a8ff;
+position: absolute;
+transform: rotateX(65deg);}
+
+.ring3{width: 200px;
+height: 120px;
+background-color: transparent;
+border-radius: 50%;
+border: 8px solid #00a8ff;
+position: absolute;
+transform: rotateX(50deg) rotateY(50deg);}
+
+.ball{width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: #00a8ff;}
+</style>
+<body>
+    <div class="container">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="ring3"></div>
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
